@@ -46,7 +46,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: #314584;
+  color: #006622;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -58,7 +58,7 @@ h6,
     Typography 
   ------------------------------------------------------------*/
 body {
-  color: #314584;
+  color: #006622;
   font-family: "Work Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -94,7 +94,7 @@ h4,
 h5,
 .h5 {
   font-size: 1rem;
-  color: #ff3946;
+  color: #00cc44;
 }
 h6,
 .h6 {
@@ -102,7 +102,7 @@ h6,
   margin-bottom: 10px;
 }
 .about p {
-  color: #314584;
+  color: #006622;
 }
 p {
   font-size: 1.1rem;
@@ -126,7 +126,7 @@ p {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
-  color: #ff3946;
+  color: #009933;
 }
 .contact-btn i {
   font-size: 2rem;
@@ -135,8 +135,8 @@ p {
   color: #ff3946;
 }
 .hero-btns a:first-child {
-  background-color: #ff3946;
-  border: 2px solid #ff3946;
+  background-color: #009933;
+  border: 2px solid #009933;
   color: #fff;
   padding: 17px 35px;
   font-size: 1rem;
@@ -147,7 +147,7 @@ p {
 }
 .hero-btns a:first-child:hover {
   background-color: #fff;
-  border: 2px solid #ff3946;
+  border: 2px solid #00e64d;
   color: #314584;
   padding: 17px 35px;
   font-size: 1rem;
@@ -160,7 +160,7 @@ p {
   font-size: 1rem;
 }
 .hero-btns a:last-child:hover {
-  color: #ff3946;
+  color: #00e64d;
   transition: all 0.3s ease;
 }
 .navbar-light .navbar-toggler {
@@ -229,7 +229,7 @@ p {
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
-  color: #ff3946 !important;
+  color: #00802b !important;
   text-decoration: none;
   background-color: #314584;
 }
@@ -238,7 +238,7 @@ p {
   font-size: 0.8rem !important;
 }
 .service-btn a:hover {
-  color: #ff3946 !important;
+  color: #00e64d !important;
 }
 .more-btn {
   text-align: center;
@@ -246,7 +246,7 @@ p {
 }
 .more-btn a {
   font-size: 1.2rem;
-  color: #ff3946 !important;
+  color: #00e64d !important;
   cursor: pointer;
   padding: 20px 30px;
 }
@@ -277,7 +277,7 @@ p {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #ff3946;
+  color: #00802b;
 }
 .navbar {
   padding: 50px 0 0 0;
@@ -290,7 +290,7 @@ p {
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ff3946;
+  color: #00802b;
 }
 .hero img {
   position: absolute;
@@ -393,5 +393,108 @@ p {
 }
 .hide {
   display: none;
+  transition: all 0.3s ease;
+}
+/*-----------------------------------------------------------
+  blog
+-------------------------------------------------------------*/
+.blog-aside img {
+  position: absolute;
+  right: -20px;
+  margin-top: 200px;
+}
+.blog {
+  padding: 25px 0px;
+  margin-bottom: 100px;
+}
+/*-----------------------------------------------------------
+  contact
+-------------------------------------------------------------*/
+.contact {
+  max-height: 550px;
+}
+.email input {
+  width: 100%;
+  height: 60px;
+  background-color: #F4FAFE;
+  border: none;
+  padding: 0px 20px;
+  color: #314584;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #314584;
+  font-weight: 600;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #314584;
+  font-weight: 600;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #314584;
+  font-weight: 600;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #314584;
+  font-weight: 600;
+}
+textarea {
+  background-color: #F4FAFE;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  margin-top: 15px;
+  color: #314584;
+  font-weight: 600;
+}
+/*-----------------------------------------------------------
+  footer
+-------------------------------------------------------------*/
+footer {
+  background-color: #39ac73;
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  padding: 70px 0px 0px 0px;
+}
+footer h5{
+  color: #fff;
+  padding-bottom: 10px;
+}
+footer h3{
+  color: #c6ecd9;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.contact-nav li {
+  display: inline;
+  color: #fff;
+}
+.contact-nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 20px 20px;
+}
+.contact-nav a:hover {
+  color: #8cd9b3;
+}
+footer h6 {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.social li {
+  display: inline;
+}
+.social li a {
+  font-size: 2.7rem;
+  color: #fff;
+  margin: 0px 30px;
+}
+.social li a:hover {
+  color: #8cd9b3;
   transition: all 0.3s ease;
 }

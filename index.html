@@ -6,6 +6,12 @@
     <title>Aura | Digital Agency</title>
   </head>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/slick.css" />
   <link rel="stylesheet" href="css/main.css" />
@@ -13,7 +19,7 @@
     <!-- Header section starts -->
     <header id="home">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="animated-nav">
           <!-- Change Logo Img Here -->
           <a class="navbar-brand" href="#"
             ><img
@@ -39,22 +45,20 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" data-scroll href="#home"
-                  >Home.<span class="sr-only">(current)</span></a
+                  >Home<span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-scroll href="#about">About Us.</a>
+                <a class="nav-link" data-scroll href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-scroll href="#portfolio">Portfolio.</a>
+                <a class="nav-link" data-scroll href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-scroll href="#blog">Blog.</a>
+                <a class="nav-link" data-scroll href="#blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-scroll href="#contact-us"
-                  >Contact Us.</a
-                >
+                <a class="nav-link" data-scroll href="#contact">Contact Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -85,16 +89,18 @@
       </div>
       <!-- Hero section starts -->
       <div class="container-fluid hero">
-        <img src="img/hero/hero-main.svg" alt="" />
+        <img src="img/hero/hero-main.svg" class="right-reveal" alt="" />
         <div class="container">
-          <h1>The Spirit of<br />Digital Agency.</h1>
-          <p>
-            Vestibulum ac diam sit amet quam vehicula elementum<br />
-            amet est on dui. Nulla porttitor accumsan tincidunt.
-          </p>
-          <div class="hero-btns">
-            <a data-scroll href="#about-us">More About us</a>
-            <a data-scroll href="#contact-us">Get in Touch.</a>
+          <div class="left-reveal">
+            <h1>The Spirit of<br />Digital Agency.</h1>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum<br />
+              amet est on dui. Nulla porttitor accumsan tincidunt.
+            </p>
+            <div class="hero-btns">
+              <a data-scroll href="#about-us">More About us</a>
+              <a data-scroll href="#contact-us">Get in Touch.</a>
+            </div>
           </div>
         </div>
       </div>
@@ -112,13 +118,13 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-12 col-lg-4">
+            <div class="col-12 col-sm-12 col-lg-4 left-reveal">
               <h2>Anything you need,we’ve got you covered</h2>
               <div class="hero-btns service-btn">
                 <a data-scroll href="#contact-us">Get in Touch</a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4 right-reveal">
               <div class="card card-shadow">
                 <img
                   src="img/service/service-1.png"
@@ -134,7 +140,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4 right-reveal">
               <div class="card card-shadow">
                 <img
                   src="img/service/service-2.png"
@@ -155,10 +161,10 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-lg-6">
+          <div class="col-12 col-sm-12 col-lg-6 left-reveal">
             <img src="img/service/service-3.svg" alt="" />
           </div>
-          <div class="col-12 col-sm-12 col-lg-6">
+          <div class="col-12 col-sm-12 col-lg-6 right-reveal">
             <h5>Our Company</h5>
             <h2>
               Some Fine Words <br />
@@ -183,91 +189,79 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 animated-title">
               <h2>Some of our<br />Creative work</h2>
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-lg-4 work-box">
+            <div class="col-12 col-lg-4 work-box bottom-reveal">
               <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
-                  <!-- Replace Patch to Image Under -->
                   <img
                     src="img/portfolio/portfolio-1.jpg"
                     class="photobox__preview"
                     alt="Preview"
                   />
-                  <!-- Replace Image Title Under -->
                   <span class="photobox__label">Awesome Work</span>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 work-box">
+            <div class="col-12 col-lg-4 work-box top-reveal">
               <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
-                  <!-- Replace Patch to Image Under -->
                   <img
                     src="img/portfolio/portfolio-2.jpg"
                     class="photobox__preview"
                     alt="Preview"
                   />
-                  <!-- Replace Image Title Under -->
                   <span class="photobox__label">Awesome Work</span>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 work-box">
+            <div class="col-12 col-lg-4 work-box bottom-reveal">
               <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
-                  <!-- Replace Patch to Image Under -->
                   <img
                     src="img/portfolio/portfolio-3.jpg"
                     class="photobox__preview"
                     alt="Preview"
                   />
-                  <!-- Replace Image Title Under -->
                   <span class="photobox__label">Awesome Work</span>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 work-box">
+            <div class="col-12 col-lg-4 work-box top-reveal">
               <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
-                  <!-- Replace Patch to Image Under -->
                   <img
                     src="img/portfolio/portfolio-4.jpg"
                     class="photobox__preview"
                     alt="Preview"
                   />
-                  <!-- Replace Image Title Under -->
                   <span class="photobox__label">Awesome Work</span>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 work-box">
+            <div class="col-12 col-lg-4 work-box bottom-reveal">
               <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
-                  <!-- Replace Patch to Image Under -->
                   <img
                     src="img/portfolio/portfolio-5.jpg"
                     class="photobox__preview"
                     alt="Preview"
                   />
-                  <!-- Replace Image Title Under -->
                   <span class="photobox__label">Awesome Work</span>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 work-box">
+            <div class="col-12 col-lg-4 work-box top-reveal">
               <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
-                  <!-- Replace Patch to Image Under -->
                   <img
                     src="img/portfolio/portfolio-6.jpg"
                     class="photobox__preview"
                     alt="Preview"
                   />
-                  <!-- Replace Image Title Under -->
                   <span class="photobox__label">Awesome Work</span>
                 </div>
               </div>
@@ -277,6 +271,134 @@
       </div>
     </section>
     <!-- portfolio section ends -->
+    <!-- blog section starts -->
+    <section id="blog" class="blog mt-5">
+      <div class="container-fluid">
+        <div class="blog-aside">
+          <img src="img/sides/aside2.svg" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <h5 class="animated-title">BLOG STORIES</h5>
+        <h2 class="animated-title">Check Our Latest Blogs</h2>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 top-reveal">
+            <div class="card card-shadow">
+              <img src="img/blog/blog-1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h6>Boost Your Business</h6>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  qui molestias odit recusandae mollitia esse?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 center-reveal">
+            <div class="card card-shadow">
+              <img src="img/blog/blog-2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h6>How to Grow more customer!</h6>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  qui molestias odit recusandae mollitia esse?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 bottom-reveal">
+            <div class="card card-shadow">
+              <img src="img/blog/blog-3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h6>Plan Before Jump</h6>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  qui molestias odit recusandae mollitia esse?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends -->
+    <!-- contact section starts -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="animated-title">CONTACT US</h5>
+            <h2 class="animated-title">Get in Touch</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 email">
+            <input
+              placeholder="Your email"
+              type="email"
+              id="email"
+              pattern=".+@globex.com"
+              size="30"
+              required
+            />
+          </div>
+          <div class="col-12 col-lg-6 email">
+            <input
+              placeholder="Subject"
+              type="subject"
+              id="subject"
+              size="30"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 message">
+            <textarea id="message" name="message" rows="5" cols="1">
+Message here...</textarea
+            >
+          </div>
+          <div class="col-12">
+            <div class="hero-btns contact-btn">
+              <!-- Send Message Btn -->
+              <a href="#">Send Message</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+    <!-- footer section starts -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5>Aura</h5>
+            <h3>CREATIVITY AGENCY</h3>
+            <ul class="contact-nav">
+              <li><a data-scroll href="#home">Home.</a></li>
+              <li><a data-scroll href="#about">About Us.</a></li>
+              <li><a data-scroll href="#portfolio">Portfolio.</a></li>
+              <li><a data-scroll href="#blog">Blog.</a></li>
+              <li><a data-scroll href="#contact">Contact.</a></li>
+            </ul>
+            <h6>© 2020 All Right Reserved</h6>
+            <ul class="social">
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
     <!-- scripts starts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
